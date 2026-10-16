@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Animated WiFi Card Generator | @coding.stella</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form>
+  <h2>WiFi Login</h2>
+  <div class="internal">
+    <div class="qr-container">
+      <img width="164" height="164" src="https://api.qrserver.com/v1/create-qr-code/?size=164x164&data=WIFI:T:WPA;S:;P:;;">
+      <div class="scanner"></div>
+    </div>
+
+    <div class="inputs">
+      <label>
+        Network name
+        <input class="ssid" placeholder="e.g. Home_Network" autocomplete="off">
+      </label>
+      <label>
+        Password
+        <input class="password" placeholder="••••••••" autocomplete="off">
+      </label>
+    </div>
+  </div>
+
+  <div class="scan-notice">
+    <div class="scan-icon">📱</div>
+    <div class="scan-text">
+      <strong>Connect Instantly</strong>
+      <span>Point your camera at the QR code</span>
+    </div>
+  </div>
+
+  <button type="button">Print WiFi Card</button>
+</form>
+  <script src="./script.js"></script>
+</body>
+</html>
